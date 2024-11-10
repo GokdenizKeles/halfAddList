@@ -1,0 +1,214 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Red Hat Text';
+  background-color: #FCF8F6;
+  
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 375px;
+  margin-inline: auto;
+  padding: 24px;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #260F08;
+  padding-bottom: 8px;
+}
+
+.container-item {
+  margin-top: 24px;
+}
+
+.container-item button {
+  position: relative;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1px solid #AD8A85;
+  display: flex;
+  background: var(--color-white, #FFFFFF);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.52px;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  color: #260F08;
+  bottom: 19px;
+  cursor: pointer;
+}
+
+.dessert-name {
+  font-weight: 400;
+  line-height: 18.52px;
+  font-size: 14px;
+  color: #87635A;
+}
+
+.contents {
+  font-weight: 600;
+  line-height: 21.17px;
+  font-size: 16px;
+  color: #260F08;
+}
+
+.price {
+  color: #C73B0F;
+  font-weight: 600;
+  line-height: 21.17px;
+  font-size: 16px;
+}
+
+/* .container-item .section {
+  background-color: #C73B0F;
+  gap: 43px;
+  display: none;
+  color: #fff;
+} */
+
+.container-item .add-btn-none {
+  background-color: #C73B0F;
+  display: flex;
+  gap: 43px;
+  color: #FFFFFF;
+}
+
+/* .container-item .add-new-btn {
+  display: flex;
+} */
+
+.order-section {
+  margin-block: 32px 24px;
+  padding: 24px;
+  background: #ffff;
+  border-radius: 12px;
+}
+
+.order-section h3 {
+font-size: 24px;
+font-weight: 700;
+line-height: 31.75px;
+color: #C73B0F;
+padding-bottom: 24px;
+}
+
+/* .order-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.order-list-item button{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  /* display: flex;
+  justify-content: center; */
+  background-color: transparent;
+  border: 1px solid #AD8A85;
+  color: #AD8A85;
+  display: grid;
+  align-content: center;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.order-list-item h4 {
+  display: flex;
+  gap: 8px;
+} 
+
+ .order-list-item p {
+  font-weight: 600;
+  line-height: 18.52px;
+  color: #C73B0F;
+  font-size: 14px;
+}
+
+.order-list-item span {
+font-weight: 400;
+line-height: 18.52px;
+color: #87635A;
+font-size: 14px;
+}
+
+.order-list-item strong {
+font-weight: 600;
+line-height: 18.52px;
+color: #87635A;
+font-size: 14px;
+}
+
+.order-list-item  h6 {
+  font-weight: 600;
+  line-height: 18.52px;
+  color: #260F08;
+  font-size: 14px;
+  
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
